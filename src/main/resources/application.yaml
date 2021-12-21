@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: budget
+  profiles:
+    active: dev
+  data:
+    rest:
+      base-path: /budget/v1
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: false
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 9000

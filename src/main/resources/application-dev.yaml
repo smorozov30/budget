@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/budget
+    username: postgres
+    password: postgres
+    hikari:
+      maximumPoolSize: 10
